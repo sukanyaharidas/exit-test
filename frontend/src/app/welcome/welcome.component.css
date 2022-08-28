@@ -1,0 +1,10 @@
+#welcome{
+    background-image: url(https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png);
+    position:absolute; 
+    background-position: 10%;
+    background-size: cover;
+    height:100%; 
+    width:100%;
+    margin: -19px 0 0;
+    width: 100%; 
+}

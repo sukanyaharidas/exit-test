@@ -1,0 +1,23 @@
+<div id="logbody">
+    <div class="login">
+        <div class="form">
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- <p class="alert alert-success">
+                  <strong>Wrong Credentials</strong> 
+              </p> -->
+            </div>
+          </div>
+          <form class="login-form"  [formGroup]="form" >
+            <!-- <span class="material-icons" id="lock">lock</span>        -->
+            <div>
+                <label>Email ID:</label>
+              <input type="email" class="form-control" formControlName="mailid" [(ngModel)]="Data.mailid"  name="mailid"  placeholder="Enter Mail ID"required/>
+              <!-- <small class="error text-danger" *ngIf="form.get('username').invalid && form.get('username').touched"><b>Username Required</b></small> -->
+          </div>
+            <button class="btn" [disabled]="!form.valid" id="btn1" type="submit" class="confirm" (click)="submitData()" data-dismiss="modal" routerLink="/otpenter">SUBMIT</button>
+            <!-- <small id="msg"><b>Are you an Admin? </b><a routerLink="/admin"><b>click Here!</b></a></small> -->
+          </form>  
+        </div>
+      </div>
+    </div>
